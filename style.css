@@ -1,0 +1,82 @@
+.container {
+    display: grid;
+grid-template-columns: 1fr 2fr 3fr;
+grid-template-rows: 150px 650px 250px ;
+grid-template-areas: 
+"header header header"
+"nav main ads"
+"footer-left . footer-right";
+gap: 18px;
+}
+.container div{
+    background-color: aquamarine;
+}
+.d1 {
+grid-area: header;
+}
+.d2{
+grid-area: nav;
+}
+.d3{
+    grid-area: main;
+
+}
+.d5{
+    grid-area: ads;
+    }
+.d6 {
+        grid-area: footer-left;
+    }
+.d4{
+    grid-area: footer-right;
+
+}
+
+.container2{
+display: grid;
+
+}
+.container2 div{
+    background-color: blueviolet;
+    border: black solid;
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 250px 560px 340px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "small small1 small1"
+      "small small4 small3"
+      "small small2 small2";
+  }
+  
+  .small { grid-area: small ; 
+    background: url(https://resheto.net/images/mater/pozitivnye_kartinki_2.jpg) center center no-repeat;
+    background-size: cover;
+}
+  
+  .small1 { 
+      grid-area: small1; 
+      background: url(https://ic.pics.livejournal.com/maxfux/45354523/674551/674551_800.jpg) center center no-repeat;
+      background-size: cover;
+    
+}
+  
+  .small2 { grid-area: small2;
+ background: url(https://i.ytimg.com/vi/zYDzpABamco/maxresdefault.jpg)center center no-repeat;
+ background-size: cover;
+}
+  
+  .small3 { grid-area: small3;
+        background: url(https://pakservis.com/assets/components/phpthumbof/cache/20180618190402-a.fc785725bd08c62676c649f1f729e233.jpg)center center no-repeat;
+        background-size: cover;
+}
+  
+  .small4 { grid-area: small4;
+background: url(https://i.ytimg.com/vi/1dLg5OIhn60/maxresdefault.jpg) center center no-repeat;
+background-size: cover;
+}
+  
+
